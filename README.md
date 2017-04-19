@@ -1,0 +1,2 @@
+# DataScienceCourseKNU
+Practics with R
