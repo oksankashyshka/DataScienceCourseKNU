@@ -55,5 +55,22 @@
 
 ## 4
 ```
+> columnmean <- function(x, removeNA = TRUE) {
++ for(i in seq_len(ncol(x))) {
++ print(mean(x[,i], trim=0, na.rm=removeNA))
++ }
++ }
+
+> mat_na = matrix( c(1, NA, 4, 8), 2, 2 )
+> mat_na
+     [,1] [,2]
+[1,]    1    4
+[2,]   NA    8
+> columnmean(mat_na)
+[1] 1
+[1] 6
+> columnmean(mat_na, FALSE)
+[1] NA
+[1] 6
 
 ```
