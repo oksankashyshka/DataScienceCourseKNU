@@ -210,12 +210,15 @@
 
 ## 5
 ```
+> sum(is.na(csv_home))
+[1] 44
 
 ```
 
 ## 6
 ```
-
+> mean(csv_home[,"Ozone"], trim=0, na.rm=TRUE)
+[1] 42.12931
 ```
 
 ## 7
