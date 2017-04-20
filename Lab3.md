@@ -72,5 +72,9 @@
 > columnmean(mat_na, FALSE)
 [1] NA
 [1] 6
+> d_frame <- data.frame(abc = 1:4, vjuk = 3:6)
+> columnmean(d_frame)
+[1] 2.5
+[1] 4.5
 
 ```
