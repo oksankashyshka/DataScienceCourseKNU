@@ -24,6 +24,32 @@
 
 ## 3
 ```
+> my_ifelse <- function(vector_x, exp, n) {
++ switch(exp,
++ "<"={
++ return(vector_x[vector_x<n])
++ },
++ ">"={
++ return(vector_x[vector_x>n])
++ },
++ "<="={
++ return(vector_x[vector_x<=n])
++ },
++ ">="={
++ return(vector_x[vector_x>=n])
++ },
++ "=="={
++ return(vector_x[vector_x==n])
++ },
++ {
++ return(vector_x)
++ }
++ )
++ }
+> my_ifelse(c(1, 2, 3), "Ґ", 5)
+[1] 1 2 3
+> my_ifelse(c(1, 2, 3, 8, 9), "<", 5)
+[1] 1 2 3
 
 ```
 
