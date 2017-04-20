@@ -104,7 +104,7 @@ A3   4.6  2.0  7.0  5.1
 > factors
 [1] adult baby  baby  child
 Levels: baby child adult
-```r
+```
 
 ## 6
 
@@ -112,6 +112,10 @@ Levels: baby child adult
 > find_na <- c(1, 2, 3, 4, NA, 6, 7, NA, 9, NA, 11)
 > which(is.na(find_na))[1]
 [1] 5
+
+> sum(is.na(find_na))
+[1] 3
+
 
 ```
 
